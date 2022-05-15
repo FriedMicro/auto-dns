@@ -35,7 +35,9 @@ const findKnownSite = (requestor, siteName) => {
 
 const postAutomationUpdate = (key, value) => {
     const url = `http://${config.automation_ip}:${config.automation_port}/state?publishKey=${config.automation_key}&${key}=${value}`;
-    axios.post(url);
+    axios.post(url).catch((err) => {
+        console.error(err);
+    });
 }
 
 const siteTimeouts = {};
