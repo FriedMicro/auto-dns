@@ -54,6 +54,7 @@ setInterval(() => {
             const keySections = site.split('_');
             const deviceKey = keySections[1];
             const clearVal = null;
+            delete siteTimeouts[site];
             postAutomationUpdate(deviceKey, clearVal);
         }
     }
