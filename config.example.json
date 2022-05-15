@@ -1,0 +1,26 @@
+{
+    "automation_ip": "192.168.1.26",
+    "automation_port": 3000,
+    "automation_key": "**********",
+    "default_dns": "192.168.1.14",
+    "requestors": [
+        {
+            "ip": "10.33.224.1",
+            "ttl": 5,
+            "dns": "192.168.1.14",
+            "automation_key": "stateKey",
+            "sites": [
+                {
+                    "id": "reddit.com",
+                    "domains": [
+                        "www.reddit.com",
+                        "reddit.com",
+                        "gql.reddit.com",
+                        "oauth.reddit.com"
+                    ],
+                    "clear_time": 15
+                }
+            ]
+        }
+    ]
+}
