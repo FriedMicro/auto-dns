@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.6.8",
     "dns2": "^2.0.1"
   }
 }
